@@ -13,9 +13,11 @@ public class HlavniProgram {
     public static void main(String... args) {
         //TODO tady bude váš kód - vytvoření instance třídy Pocitac, zapnutí, vpynutí, výpis hodnot.
 
-        Pocitac mujPocitac = new Pocitac();
+        /*Pocitac mujPocitac = new Pocitac();
         System.out.println(mujPocitac);
-        mujPocitac.zapniSe();
+        mujPocitac.zapniSe();*/
+
+        Pocitac mujPocitac = new Pocitac();
 
         Disk mujDisk = new Disk();
         mujDisk.setKapacitaDisku(118_111_600_640L);
@@ -29,6 +31,8 @@ public class HlavniProgram {
         mujProcesor.setRychlost(2_200_000_000L);
         mujProcesor.setVyrobce("Intel");
 
+
+
         System.out.println(mujDisk);
         System.out.println(mojePamet);
         System.out.println(mujProcesor);
@@ -38,6 +42,13 @@ public class HlavniProgram {
         mujPocitac.setRam(mojePamet);
 
         System.out.println(mujPocitac);
+
+        mujPocitac.vytvorSouborOVelikost(80_000_000_000L);
+        System.out.println();
+
+        mujPocitac.vymazSouboryOVelikosti(300_000_000_000L);
+        System.out.println();
+
 
         mujPocitac.zapniSe();
         mujPocitac.zapniSe();
